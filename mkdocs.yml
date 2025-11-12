@@ -1,0 +1,69 @@
+site_name: okiraku-lab
+site_author: uti
+site_description: "高校理科の学習に役立つWebアプリや動画などを掲載しています。" 
+
+# Theme
+theme:
+  name: material
+  language: ja
+  font:
+    text: IBM Plex Sans JP
+    code: Roboto Mono
+  palette:
+    scheme: lecture
+  logo: 'assets/beaker-outline.svg'
+  features:
+  - navigation.instant
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.code.annotate
+  - content.code.copy
+  - content.tooltips
+  plugins:
+  - search:
+      lang:
+        - ja
+extra_css:
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+  - stylesheets/extra.css
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Page tree
+nav:
+  - トップ: index.md
+  - 物理: physics.md
+  - 化学:
+    - 原子の電子配置: 01 electronic_configuration.md
+    - さまざまな化学式: 02 chemicalformula.md
+    - モル濃度: 03 molar_concentration.md
+    - 化学反応式: 04 chemical_equation.md
+    - 中和滴定: 05 neutralization_titration.md
+    - 酸化と還元: 06 oxidation_and_reduction.md
