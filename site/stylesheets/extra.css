@@ -1,0 +1,98 @@
+.md-typeset h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  border-bottom: solid 4px var(--md-primary-fg-color);
+  margin-bottom: 0.86rem;
+}
+.md-typeset h2 {
+  font-size: 1.12rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--md-primary-fg-color);
+}
+.md-typeset h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-bottom: 2px dotted var(--md-primary-fg-color);
+}
+.md-typeset h4 {
+  font-weight: bold;
+  border-bottom: 1px solid var(--md-primary-fg-color);
+}
+.md-typeset h5 {
+  text-transform: none;
+}
+.md-typeset img {
+  box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.4);
+  max-width: 86%;
+  display: block;
+  margin: auto;
+}
+.md-typeset .noshadow img {
+  box-shadow: none;
+  max-width: 98%;
+  display: block;
+  margin: auto;
+}
+.md-typeset .noshadow-76 img {
+  box-shadow: none;
+  max-width: 76%;
+  display: block;
+  margin: auto;
+}
+.md-typeset .full img {
+  box-shadow: none;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/*
+.md-typeset table th {
+  background-color: var(--md-primary-fg-color--light);
+  color: white;
+}*/
+
+.md-typeset figure img {
+  box-shadow: none;
+  display: block;
+  margin: auto;
+}
+.md-typeset figcaption {
+  font-style: normal;
+  margin: 0;
+}
+.md-typeset figure {
+  margin: 0;
+}
+
+.md-typeset video {
+  box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.4);
+  max-width: 92%;
+  display: block;
+  margin:auto;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.3rem;
+}
+
+.md-typeset code {
+  tab-size: 4;
+  border-radius: 0.3rem;
+}
+
+.md-typeset .md-button {
+  margin: 0.1em;
+}
+
+[data-md-color-scheme="lecture"] {
+  /*--md-primary-fg-colorでは、テーマカラーを設定できる*/
+  --md-primary-fg-color:        #808080;
+  --md-primary-fg-color--light: #239e66;
+  --md-primary-fg-color--dark:  #043264;
+}
+
+:root > * {
+  --md-code-hl-comment-color:rgb(107, 163, 121);
+}
