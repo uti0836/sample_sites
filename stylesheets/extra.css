@@ -96,3 +96,8 @@
 :root > * {
   --md-code-hl-comment-color:rgb(107, 163, 121);
 }
+
+video.mv {
+  display: block;
+  margin: 20px 0;
+}
