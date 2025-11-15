@@ -46,13 +46,6 @@
   display: block;
   margin: auto;
 }
-
-/*
-.md-typeset table th {
-  background-color: var(--md-primary-fg-color--light);
-  color: white;
-}*/
-
 .md-typeset figure img {
   box-shadow: none;
   display: block;
@@ -97,7 +90,7 @@
   --md-code-hl-comment-color:rgb(107, 163, 121);
 }
 
-video.mv {
+video.movie {
   display: block;
   margin: 20px 0;
 }
